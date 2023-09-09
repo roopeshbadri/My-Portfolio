@@ -29,7 +29,7 @@
       rel="stylesheet"
     />
     <style>
-      a:hover
+      .navbar a:hover
       {
         color: rgb(235, 0, 195); 
         background-color: rgba(150, 159, 159, 0.395);
@@ -41,8 +41,13 @@
         height: 50px;
         width: 160px;
       }
-      .carousel-item .button:hover{
+      /* .carousel-item .button:hover{
         background-color: aqua;
+      } */
+      .navbar{
+        overflow: hidden;
+        /* position: fixed;  */
+        width: 100%;
       }
     </style>
   </head>
@@ -50,14 +55,14 @@
     <div id="carousel" class="carousel slide" data-bs-ride="true" ;>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/assets/Hello,.png" class="d-block w-100" alt="intro" style="position: relative;"/>
-          <a href="#about"><button type="button" class="button"  style="position: absolute;color: black;border-radius: 25px;border-style: none;">view my work <i class="bi bi-arrow-down"></i></button></a>
+          <img src="assets/Hello,.png" class="d-block w-100" alt="intro" style="position: relative;"/>
+          <a href="#navbar"><button type="button" class="button btn btn-outline-info"  style="position: absolute;border-radius: 25px;">view my work <i class="bi bi-arrow-down"></i></button></a>
         </div>
       </div>
     </div>
 
     <header>
-      <nav class="navbar navbar-expand-lg bg bg-dark">
+      <nav class="navbar navbar-expand-lg bg bg-dark" id="navbar">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
             <span
@@ -158,7 +163,7 @@
                   class="row col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center my-5"
                 >
                   <img
-                    src="/assets/WhatsApp Image 2023-09-01 at 10.58.03 PM.jpeg"
+                    src="assets/WhatsApp Image 2023-09-01 at 10.58.03 PM.jpeg"
                     alt="dummy"
                     style="height: 300px; width: 300px;border-radius: 50%;"
                   />
@@ -232,38 +237,42 @@
     <div class="row container col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center mx-5">
 
         <div id="kreedaverse" class="card col-sm-1 col-md-2 col-lg-4" >
-            <a id="img1" href="https://github.com/roopeshbadri/mini-project.git"><img class="card-img-top position-relative" src="/assets/image.jpg" alt="Card image cap" height="200px"></a>
-            <p id="project1" class="text-center position-absolute text-light" style="top: 45%;left: 33%; font-size: large;background-color: rgb(145, 1, 1);border-radius: 15px;"></p>  
+            <a id="img1" href="https://github.com/roopeshbadri/mini-project.git"><img class="card-img-top position-relative" src="assets/image.jpg" alt="Card image cap" height="200px"></a>
+            <p id="project1" class="text-center position-absolute text-light" style="top: 45%;left: 33%; font-size: large;background-color: rgb(175, 11, 101);border-radius: 15px;"></p>  
         </div>
         <div id="ulearn" class="card col-sm-1 col-md-2 col-lg-4" >
-             <a href="https://github.com/roopeshbadri/minip"><img class="card-img-top position-relative" src="/assets/elearning.jpg" alt="Card image cap" height="200px"></a>
-             <p id="project2" class="text-center position-absolute text-light" style="top: 45%;left: 42%; font-size: large;background-color: rgb(145, 1, 1);border-radius: 15px;"></p> 
+             <a href="https://github.com/roopeshbadri/minip"><img class="card-img-top position-relative" src="assets/elearning.jpg" alt="Card image cap" height="200px"></a>
+             <p id="project2" class="text-center position-absolute text-light" style="top: 45%;left: 42%; font-size: large;background-color: rgb(175, 11, 101);border-radius: 15px;"></p> 
         </div>
         <div id="tempconverter" class="card col-sm-1 col-md-2 col-lg-4" >
-            <a href="https://github.com/roopeshbadri/Temperature-Converter"><img class="card-img-top position-relative" src="/assets/temperature-conversion-convert-temperature-icon.png" alt="Card image cap" height="200px"></a>
-            <p id="project3" class="text-center position-absolute text-light" style="top: 45%;left: 28%;font-size: large;background-color: rgb(145, 1, 1);border-radius: 15px;"></p> 
+            <a href="https://github.com/roopeshbadri/Temperature-Converter"><img class="card-img-top position-relative" src="assets/temperature-conversion-convert-temperature-icon.png" alt="Card image cap" height="200px"></a>
+            <p id="project3" class="text-center position-absolute text-light" style="top: 45%;left: 28%;font-size: large;background-color: rgb(175, 11, 101);border-radius: 15px;"></p> 
         </div>
     </div>
     <div class="row container col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center  mx-5 ">
   
         <div id="calculator" class="card col-sm-1 col-md-2 col-lg-4" >
-            <a href=""><img class="card-img-top position-relative" src="/assets/calci.jpg" alt="Card image cap" style="height: 200px;"></a>
-            <p id="project5" class="text-center position-absolute text-light" style="top: 45%;left: 38%;font-size: large;background-color: rgb(145, 1, 1);border-radius: 12px;"></p>  
+            <a href="https://github.com/roopeshbadri/Calculator"><img class="card-img-top position-relative" src="assets/calci.jpg" alt="Card image cap" style="height: 200px;"></a>
+            <p id="project5" class="text-center position-absolute text-light" style="top: 45%;left: 38%;font-size: large;background-color: rgb(175, 11, 101);border-radius: 12px;"></p>  
         </div>
         <div id="portfolio" class="card col-sm-1 col-md-2 col-lg-4" >
-            <a href="https://github.com/roopeshbadri/Portfolio-Template"><img class="card-img-top position-relative" src="/assets/portfolio.jpg" alt="Card image cap"></a>
-            <p id="project6" class="text-center position-absolute text-light" style="top: 45%;left: 32%;font-size: large;background-color: rgb(145, 1,1 );border-radius: 12px;"></p> 
+            <a href="https://github.com/roopeshbadri/Portfolio-Template"><img class="card-img-top position-relative" src="assets/portfolio.jpg" alt="Card image cap" height="200px"></a>
+            <p id="project6" class="text-center position-absolute text-light" style="top: 45%;left: 32%;font-size: large;background-color: rgb(175, 11,101 );border-radius: 12px;"></p> 
         </div>
         <div id="voice" class="card col-sm-1 col-md-2 col-lg-4" >
-            <a href="https://github.com/roopeshbadri/voice-assistant"><img class="card-img-top position-relative" src="/assets/voice.jpg" alt="Card image cap"></a>
-            <p id="project7" class="text-center position-absolute text-light" style="top: 45%;left: 35%;font-size: large;background-color: rgb(145, 1, 1);border-radius: 12px;"></p> 
+            <a href="https://github.com/roopeshbadri/voice-assistant"><img class="card-img-top position-relative p-1" src="assets/voice.jpg" alt="Card image cap" height="200px"></a>
+            <p id="project7" class="text-center position-absolute text-light" style="top: 45%;left: 35%;font-size: large;background-color: rgb(175, 11, 101);border-radius: 12px;"></p> 
         </div>
         <div id="myport" class="card col-sm-1 col-md-2 col-lg-4" >
-            <a href="https://github.com/roopeshbadri/voice-assistant"><img class="card-img-top position-relative" src="/assets/Untitled design.png" alt="Card image cap"></a>
-            <p id="project8" class="text-center position-absolute text-light" style="top: 45%;left: 35%;font-size: large;background-color: rgb(145, 1, 1);border-radius: 12px;"></p> 
+            <a href="https://github.com/roopeshbadri/My-Portfolio"><img class="card-img-top position-relative p-" src="assets/Untitled design.png" alt="Card image cap" height="200px"></a>
+            <p id="project8" class="text-center position-absolute text-light" style="top: 45%;left: 35%;font-size: large;background-color: rgb(175, 11, 101);border-radius: 12px;"></p> 
+        </div>
+        <div id="todo" class="card col-sm-1 col-md-2 col-lg-4" >
+            <a href="https://github.com/roopeshbadri/To-Do-List"><img class="card-img-top position-relative p-" src="assets/todo.jpg" alt="Card image cap" height="200px"></a>
+            <p id="project9" class="text-center position-absolute text-light" style="top: 45%;left: 38%;font-size: large;background-color: rgb(175, 11, 101);border-radius: 12px;"></p> 
         </div>
     </div>
-    <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center" id="certificates">
         <p class="d-flex justify-content-center align-items-center my-5" style="font-size: 40px">
             <u><b>CERTIFICATES</b></u>
         </p>
@@ -280,29 +289,29 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="/assets/056_clmsCertificate.png" alt="carousel 1" style="max-height: 80vh;">
+                <img class="d-block w-100" src="assets/056_clmsCertificate.png" alt="carousel 1" style="max-height: 80vh;">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/assets/056_task_certificate.png" alt="carousel 1" style="max-height: 80vh;">
+                <img class="d-block w-100" src="assets/056_task_certificate.png" alt="carousel 1" style="max-height: 80vh;">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/assets/pdf2png/Roopesh_Jun_2023_participation_39506/Roopesh_Jun_2023_participation_39506-1.png" alt="carousel 1" style="max-height: 80vh;">
+                <img class="d-block w-100" src="assets/pdf2png/Roopesh_Jun_2023_participation_39506/Roopesh_Jun_2023_participation_39506-1.png" alt="carousel 1" style="max-height: 80vh;">
             </div>
             <div class="carousel-item ">
-                <img class="d-block w-100" src="/assets/pdf2png/Roopesh_Jun_2023_project_completion_39506/Roopesh_Jun_2023_project_completion_39506-1.png" alt="carousel 2" style="max-height: 80vh;">
+                <img class="d-block w-100" src="assets/pdf2png/Roopesh_Jun_2023_project_completion_39506/Roopesh_Jun_2023_project_completion_39506-1.png" alt="carousel 2" style="max-height: 80vh;">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/assets/MOS.jpeg" alt="carousel 3" style="max-height: 80vh;">
+                <img class="d-block w-100" src="assets/MOS.jpeg" alt="carousel 3" style="max-height: 80vh;">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/assets/SGF.jpeg " alt="carousel 4" style="max-height: 80vh;">
+                <img class="d-block w-100" src="assets/SGF.jpeg " alt="carousel 4" style="max-height: 80vh;">
             </div>
             
             <div class="carousel-item">
-                <img class="d-block w-100" src="/assets/SSPF.jpeg " alt="carousel 5" style="max-height: 80vh;">
+                <img class="d-block w-100" src="assets/SSPF.jpeg " alt="carousel 5" style="max-height: 80vh;">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/assets/BB.jpeg " alt="carousel 6" style="max-height: 80vh;">   
+                <img class="d-block w-100" src="assets/BB.jpeg " alt="carousel 6" style="max-height: 80vh;">   
             </div>
         </div>
         <button class="carousel-control-prev" href="#carouselExample" type="button" data-bs-slide="prev" data-bs-target="#carouselExample">
@@ -348,8 +357,8 @@
         </div>
         <div style="height: 15px;"></div>
         <div class="container col-sm-12 col-md-12 col-lg-6 d-flex justify-content-end">
-            <a href="#" >
-                <button class="button text-center bg-dark" style="width: 120px;height: 30px;border-radius: 2px;border-style: none;color: white;">SUBMIT</button>
+            <a href="" >
+                <button class="btn btn-outline-dark" >SUBMIT</button>
             </a>
         </div>  
     <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center" style="height: 20px;">
@@ -357,17 +366,22 @@
             <i class="bi bi-chevron-double-up" style="font-size: 30px;"></i>
         </button></a>
     </div>
-    <div class="container-fluid bg-dark" style="height: 150px;">
+    <div class="container-fluid bg-dark" style="height: 160px;">
         <div class="container col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center p-6 ">
             <div class="col-sm-3 col-md-3 col-lg-3 d-flex justify-content-center my-5"> 
+              <a href="https://www.linkedin.com/in/badri-roopesh-b901bb254/">
                 <button type="button" class="btn " style="height: 50px;width: 50px;">
                     <i class="bi bi-linkedin" style="font-size: 30px;color: white;"></i>
                 </button>
+              </a>  
+              
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3 d-flex justify-content-center my-5"> 
+              <a href="https://twitter.com/roopesshhaaa">
                 <button type="button" class="btn " style="height: 50px;width: 50px;">
                     <i class="bi bi-twitter" style="font-size: 30px;color: white;"></i>
                 </button>
+              </a>
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3 d-flex justify-content-center my-5"> 
                 <button type="button" class="btn " style="height: 50px;width: 50px;">
@@ -375,9 +389,12 @@
                 </button>
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3 d-flex justify-content-center my-5"> 
+              <a href="https://github.com/roopeshbadri">
                 <button type="button" class="btn " style="height: 50px;width: 50px;">
                     <i class="bi bi-github" style="font-size: 30px;color: white;"></i>
                 </button>
+              </a>
+                
             </div>
         </div>
     </div>
@@ -434,6 +451,12 @@
         })
         $("#myport").mouseleave(function(){
             $("#project8").html("My Portfolio").css({"display":"flex","justify-content":"center","align-items":"center","color":"red","text-decoration":"bold","font-size":"20px"}).slideUp(1000)
+        })
+        $("#todo").mouseenter(function(){
+            $("#project9").html("To-Do List").css({"display":"flex","justify-content":"center","align-items":"center","color":"red","text-decoration":"bold","font-size":"20px"}).fadeIn(1000)
+        })
+        $("#todo").mouseleave(function(){
+            $("#project9").html("To-Do List").css({"display":"flex","justify-content":"center","align-items":"center","color":"red","text-decoration":"bold","font-size":"20px"}).slideUp(1000)
         })
         // $("#kreedaverse").hover(function(){
         //   $("#img1").animate({
